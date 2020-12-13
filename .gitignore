@@ -8,5 +8,8 @@ public
 .env
 .log
 
+# tooling config files
+.tool-versions
+
 # macOS related files
 .DS_Store
