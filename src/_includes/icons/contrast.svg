@@ -1,0 +1,22 @@
+<svg
+  class="w-8 h-8 inline stroke-current fill-current text-gray-900 dark:text-gray-200 cursor-pointer"
+  viewBox="0 0 32 32"
+  xmlns="http://www.w3.org/2000/svg"
+  stroke-miterlimit="10"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+>
+  <circle
+    transform="matrix(.3871 0 0 .3871 3.5 3.503)"
+    stroke-width="2"
+    fill="none"
+    cx="32"
+    cy="32"
+    r="31"
+  />
+  <path
+    d="M15.887 5.438h-5.806M15.887 7.761H6.984M15.887 10.084H5.435M15.887 12.406H4.274M15.887 14.729h-12M15.887 27.89v-24M15.887 17.051h-12M15.887 19.374H4.274M15.887 21.696H5.435M15.887 24.019H6.984M15.887 26.342h-5.806"
+    fill="none"
+    stroke-width=".7742"
+  />
+</svg>
