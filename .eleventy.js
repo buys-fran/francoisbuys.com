@@ -3,6 +3,8 @@ require('dotenv').config()
 module.exports = (config) => {
   config.addLayoutAlias('base', 'layouts/base.njk')
 
+  config.addPassthroughCopy("./src/img");
+
   // minify the html output
   config.addTransform('htmlmin', require('./src/utils/minify-html.js'))
 
