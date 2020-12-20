@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+<header class="pb-6">
+  <h2 class="font-medium text-xl tracking-wide">{{ title }}</h2>
+  <p class="text-sm text-gray-500">
+    <span>Published {{ page.date | dateDisplay }}</span>
+    {% if updatedAt %}
+    <span>and updated on {{ updatedAt | dateDisplay }}</span>
+    {% endif %}
+  </p>
+  <p class="text-sm text-gray-500">
+    <span>{{ content | emojiReadTime }}</span>
+  </p>
+</header>
+
+<article class="post">
+  {{ content | safe }}
+</article>
