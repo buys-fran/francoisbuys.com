@@ -1,9 +1,18 @@
+const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 require('dotenv').config()
 
 module.exports = (config) => {
   config.addLayoutAlias('base', 'layouts/base.njk')
+  config.addLayoutAlias('post', 'layouts/post.njk')
 
   config.addPassthroughCopy("./src/img");
+
+  // Add some utility filters
+  config.addFilter("dateDisplay", require("./src/utils/filters/date.js"));
+  config.addFilter("postBlurb", require("./src/utils/filters/post.js"));
+
+  // Add read time utility filters
+  config.addPlugin(emojiReadTime, { wpm: 100 });
 
   // minify the html output
   config.addTransform('htmlmin', require('./src/utils/minify-html.js'))
