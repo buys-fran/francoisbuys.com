@@ -5,3 +5,41 @@
 html {
   font-size: 20px;
 }
+
+.post h3 {
+  @apply font-medium tracking-wide py-4;
+}
+
+.post p {
+  @apply pb-4;
+}
+
+.post em {
+  @apply font-medium tracking-wide;
+}
+
+.post a {
+  @apply text-yellow-400 dark:text-yellow-300;
+}
+
+.post ul {
+  @apply bg-yellow-50 dark:bg-gray-900 rounded-md p-4 mb-6;
+}
+.post ol {
+  @apply list-decimal bg-yellow-50 dark:bg-gray-900 rounded-md py-4 px-8  mb-6;
+}
+
+.post li {
+  @apply font-medium p-2 pb-1 tracking-wide;
+}
+
+.post blockquote {
+  @apply bg-yellow-50 dark:bg-gray-900 rounded-md text-center m-4 p-4;
+}
+.post blockquote p {
+  @apply pb-1 text-3xl tracking-wide leading-none;
+}
+.post blockquote span {
+  @apply float-right pt-4 text-gray-500 text-base;
+}
+
