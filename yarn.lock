@@ -45,6 +45,11 @@
     time-require "^0.1.2"
     valid-url "^1.0.9"
 
+"@11tyrocks/eleventy-plugin-emoji-readtime@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@11tyrocks/eleventy-plugin-emoji-readtime/-/eleventy-plugin-emoji-readtime-1.0.1.tgz#3be148ac0e814fc4e0066447495c06b5155bb8f6"
+  integrity sha512-AYLOm3Bt5hskZeWkckOkLoGZyYcWVbfZrc+09BpOt4/VmAa+Sx3bH8LSKW/b3YMYq234Q5iuErnv3Cgb4zPL6w==
+
 "@fullhuman/postcss-purgecss@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-3.0.0.tgz#e39bf7a7d2a2c664ed151b639785b2efcbca33ff"
@@ -1701,7 +1706,7 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-luxon@^1.24.1:
+luxon@^1.24.1, luxon@^1.25.0:
   version "1.25.0"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.25.0.tgz#d86219e90bc0102c0eb299d65b2f5e95efe1fe72"
   integrity sha512-hEgLurSH8kQRjY6i4YLey+mcKVAWXbDNlZRmM6AgWDJ1cY3atl8Ztf5wEY7VBReFbmGnwQPz7KYJblL8B2k0jQ==
