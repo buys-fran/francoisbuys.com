@@ -34,12 +34,12 @@ html {
 }
 
 .post blockquote {
-  @apply bg-yellow-50 dark:bg-gray-900 rounded-md text-center m-4 p-4;
+  @apply bg-yellow-50 dark:bg-gray-900 rounded-md text-center md:m-4 p-4;
 }
 .post blockquote p {
-  @apply pb-1 text-3xl tracking-wide leading-none;
+  @apply pb-1 text-xl md:text-3xl tracking-wide leading-none;
 }
 .post blockquote span {
-  @apply float-right pt-4 text-gray-500 text-base;
+  @apply block text-center md:float-right pt-4 text-gray-500 text-base;
 }
 

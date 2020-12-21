@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ '/styles.css' | url }}" />
   </head>
-  <body class="flex font-light bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200">
-    <aside class="max-h-screen overflow-scroll h-screen w-1/3 pt-4 p-8 border-r border-gray-300 dark:border-gray-900">
-      {% include "partials/sidebar.njk" %}
-    </aside>
-
-    <main class="flex flex-col max-h-screen h-screen w-2/3 overflow-scroll">
-      <section class="fixed w-2/3">
+  <body class="flex flex-col md:flex-row font-light bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200">
+    <main class="flex flex-col md:max-h-screen md:h-screen md:w-2/3 md:overflow-scroll">
+      <section class="fixed top-0 w-full md:w-2/3 ">
         {% include "partials/navigation.njk" %}
      </section>
 
-     <div class="mt-24 px-10 flex-grow">
+     <div class="mt-24 px-4 mb-4 md:px-10 flex-grow">
        {{ content | safe }}
       </div>
     </main>
+
+    <aside class="w-full md:order-first md:w-1/3 md:mt-0 md:pt-4 px-4 lg:px-8 pb-8 md:pt-8 border-r border-gray-300 dark:border-gray-900 md:max-h-screen md:overflow-scroll md:h-screen">
+      {% include "partials/sidebar.njk" %}
+    </aside>
 
     {% set js %}
       {% include "js/theme.js" %}
