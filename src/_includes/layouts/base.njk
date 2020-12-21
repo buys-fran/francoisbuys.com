@@ -29,5 +29,8 @@
     {% endset %}
     <script>{{ js | jsmin | safe }}</script>
 
+    {% if meta.env === 'production' %}
+      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "92360fbdea3b41fcbee3cf07c9abbd40"}'></script><!-- End Cloudflare Web Analytics -->
+    {% endif %}
   </body>
 </html>
