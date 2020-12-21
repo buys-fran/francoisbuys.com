@@ -1,5 +1,6 @@
-const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 require('dotenv').config()
+
+const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 
 module.exports = (config) => {
   config.addLayoutAlias('base', 'layouts/base.njk')
