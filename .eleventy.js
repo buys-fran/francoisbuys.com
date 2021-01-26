@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
+const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = (config) => {
   config.addLayoutAlias('base', 'layouts/base.njk')
@@ -14,6 +15,7 @@ module.exports = (config) => {
 
   // Add read time utility filters
   config.addPlugin(emojiReadTime, { wpm: 100 });
+  config.addPlugin(pluginSEO, require("./src/_data/meta"));
 
   // minify the html output
   config.addTransform('htmlmin', require('./src/utils/minify-html.js'))
