@@ -15,6 +15,7 @@
     "@11ty/eleventy": "^0.11.1",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "dotenv": "^8.2.0",
+    "eleventy-plugin-seo": "^0.5.1",
     "eleventy-plugin-tailwindcss": "^0.3.0",
     "html-minifier": "^4.0.0",
     "luxon": "^1.25.0",

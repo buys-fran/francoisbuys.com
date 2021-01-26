@@ -1,9 +1,11 @@
 module.exports = {
-  name: 'Francois Buys - Fullstack Developer',
-  url: `${process.env.URL}`,
-  authorName: 'Francois Buys',
+  author: 'Francois Buys',
   authorUrl: 'https://francoisbuys.com',
   description:
-    "francoisbuys.com is a technical blog where software tips and ideas are shared from a fullstack developer's perspective",
+    "francoisbuys.com is a blog that explores ideas around fullstack programming, SOLID principles, OOP, TDD and even some fun tutorials.",
   env: `${process.env.ELEVENTY_ENV}`,
+  image: `${process.env.URL}/img/fb.jpeg`,
+  title: 'Francois Buys - Fullstack Developer',
+  twitter: 'francoisbuys',
+  url: `${process.env.URL}`,
 }

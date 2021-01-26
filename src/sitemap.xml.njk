@@ -3,11 +3,29 @@ permalink: sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>{{ meta.url }}</loc>
-  </url>
-  {% for item in collections.all -%}
-    <url><loc>{{ meta.url | url }}{{ item.url }}</loc></url>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+  {% for page in collections.all -%}
+  {% if page.data.ignore !== true %}
+    <url>
+      <loc>{{ meta.url | url }}{{ page.url }}</loc>
+      <lastmod>
+        {% if page.updatedAt %} {{ page.updatedAt | dateDisplay('yyyy-MM-dd') }}
+        {% else %} {{ page.date | dateDisplay('yyyy-MM-dd') }} {% endif %}
+      </lastmod>
+      <changefreq>
+        {% if page.data.changefreq %} {{ page.data.changefreq }}
+        {% else %} monthly {% endif %}
+      </changefreq>
+      <priority>
+        {% if page.data.priority %} {{ page.data.priority }}
+        {% else %} 0.50 {% endif %}
+      </priority>
+    </url>
+  {% endif %}
   {% endfor %}
 </urlset>

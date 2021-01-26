@@ -1,6 +1,8 @@
 ---
 layout: base
 title: francoisbuys.com
+changefreq: weekly
+priority: 1
 ---
 
 {% for post in collections.posts %}
