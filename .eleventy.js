@@ -42,6 +42,12 @@ module.exports = (config) => {
     return minified.code
   })
 
+  // configure markdown
+  const markdownIt = require("markdown-it");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const markdownLib = markdownIt({ html: true }).use(markdownItAnchor);
+  config.setLibrary("md", markdownLib);
+
   return {
     dir: {
       input: 'src',

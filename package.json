@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "markdown-it-anchor": "^7.0.0",
     "prettier": "2.2.1"
   }
 }
