@@ -15,7 +15,7 @@ module.exports = (config) => {
   config.addFilter("postBlurb", require("./src/utils/filters/post.js"));
 
   // Add read time utility filters
-  config.addPlugin(emojiReadTime, { wpm: 100 });
+  config.addPlugin(emojiReadTime, { wpm: 150 });
   config.addPlugin(pluginSEO, require("./src/_data/meta"));
   config.addPlugin(syntaxHighlight);
 
