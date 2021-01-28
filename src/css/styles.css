@@ -35,7 +35,7 @@ html {
 }
 
 .post blockquote {
-  @apply bg-yellow-50 dark:bg-gray-900 rounded-md text-center md:m-4 p-4;
+  @apply bg-yellow-50 dark:bg-gray-900 rounded-md text-center md:my-4 p-4;
 }
 .post blockquote p {
   @apply pb-1 text-xl md:text-3xl tracking-wide leading-none;
@@ -88,8 +88,8 @@ code[class*='language-'] ::selection {
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 1em;
-  margin: 0.5em 0;
+  padding: 1rem;
+  margin: 1rem 0;
   overflow: auto;
 }
 
