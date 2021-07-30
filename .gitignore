@@ -1,15 +1,18 @@
-# dependencies installed by npm
-node_modules
-
-# build artefacts
-public
-
-# secrets and errors
+# Misc
+*.log
+npm-debug.*
+*.scssc
+*.swp
+.DS_Store
+Thumbs.db
+.sass-cache
 .env
-.log
 
 # tooling config files
 .tool-versions
 
-# macOS related files
-.DS_Store
+# Node modules and output
+node_modules
+dist
+src/_includes/css
+
