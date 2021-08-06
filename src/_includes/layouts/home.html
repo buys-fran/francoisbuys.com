@@ -1,7 +1,17 @@
 {% extends "layouts/base.html" %} {% block content %}
-<article>
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
+<article class="intro">
+  <div>
+    <h1>
+      <span>{{ intro.eyebrow }}<span>
+      {{ intro.main }}
+    </h1>
+  </div>
+  <div>
+    <a href="{{ intro.buttonUrl }}" class="button">{{ intro.buttonText }}</a>
+  </div>
+  <div>
+    <img src="{{ intro.image }}" alt="{{ intro.imageAlt }}" />
+  </div>
 </article>
 {% endblock %}
 
