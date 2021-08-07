@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "text": "home",
+      "url": "/"
+    },
+    {
+      "text": "writing",
+      "url": "/writing/"
+    },
+    {
+      "text": "collections",
+      "url": "/collections/"
+    }
+  ]
+}
+
