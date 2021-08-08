@@ -1,0 +1,26 @@
+<article>
+  <div>
+    <div>
+      <div>
+        <h2> {{ featuredPosts.title }} </h2>
+        <p>
+          {{ featuredPosts.summary }}
+        </p>
+      </div>
+      {% for post in collections.featuredPosts %}
+      <div>
+        <a
+          href="{{ post.url }}"
+          aria-label="See {{ post.data.title }}"
+        >
+          {{ post.data.title }}
+        </a>
+          {{ post.data.page.excerpt | safe }}
+      </div>
+      {% endfor %}
+    </div>
+    <div>
+      <a href="/posts/" class="button">See more posts</a>
+    </div>
+  </div>
+</article>
