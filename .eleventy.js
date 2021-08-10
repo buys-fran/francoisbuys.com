@@ -10,6 +10,12 @@ module.exports = (config) => {
     excerpt_separator: '<!-- more -->',
   })
 
+  // Blog posts in reverse date order
+  config.addCollection('blog', (collection) => {
+    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse()
+  })
+
+  // Featured blog posts in ordered by display order
   config.addCollection('featuredPosts', (collection) => {
     const posts = collection
       .getFilteredByGlob('./src/posts/*.md')

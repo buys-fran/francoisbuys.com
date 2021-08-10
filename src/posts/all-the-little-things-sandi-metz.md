@@ -1,7 +1,9 @@
 ---
-title: "All the little things"
+title: 'All the little things'
+date: '2020-12-20'
 displayOrder: 1
 featured: true
+tags: ['oop']
 ---
 I wrote this post inspired by a legend in the object-oriented design community, 
 <a href="https://sandimetz.com/about" target="_blank" rel="noreferrer noopener">

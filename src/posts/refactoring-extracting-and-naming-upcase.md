@@ -1,7 +1,9 @@
 ---
-title: "Refactoring, Extraction and Naming"
+title: 'Refactoring, Extraction and Naming'
+date: '2021-01-10'
 displayOrder: 3
 featured: true
+tags: ['oop', 'refactoring']
 ---
 
 This post is inspired by a video lesson titled

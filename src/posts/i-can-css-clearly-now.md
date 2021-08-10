@@ -1,7 +1,9 @@
 ---
 title: 'I can CSS clearly now'
+date: '2021-01-29'
 displayOrder: 2
 featured: true
+tags: ['css']
 ---
 
 I recently had the opportunity to present TailwindCSS as an alternative to bootstrap. My approach
