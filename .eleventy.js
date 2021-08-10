@@ -1,3 +1,8 @@
+// Filters
+const dateFilter = require('./src/filters/date-filter.js')
+const w3DateFilter = require('./src/filters/w3-date-filter.js')
+
+// Utils
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js')
 
 module.exports = (config) => {
@@ -22,6 +27,10 @@ module.exports = (config) => {
       .filter((x) => x.data.featured)
     return sortByDisplayOrder(posts)
   })
+
+  // Add filters
+  config.addFilter('dateFilter', dateFilter)
+  config.addFilter('w3DateFilter', w3DateFilter)
 
   return {
     markdownTemplateEngine: 'njk',
