@@ -20,6 +20,11 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse()
   })
 
+  // Digital collections (bookmarks) in reverse date order
+  config.addCollection('bookmarks', (collection) => {
+    return [...collection.getFilteredByGlob('./src/bookmarks/*.md')].reverse()
+  })
+
   // Featured blog posts in ordered by display order
   config.addCollection('featuredPosts', (collection) => {
     const posts = collection
