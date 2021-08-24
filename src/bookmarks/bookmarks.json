@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/post.html",
+  "permalink": "/bookmarks/{{ title | slug }}/index.html"
+}
