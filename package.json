@@ -8,14 +8,19 @@
   "keywords": [],
   "license": "MIT",
   "scripts": {
-    "start": "npx eleventy --serve"
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "concurrently": "^6.3.0",
     "gulp": "^4.0.2",
-    "moment": "^2.29.1"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.0.0",
+    "moment": "^2.29.1",
+    "sass": "^1.43.4"
   }
 }
