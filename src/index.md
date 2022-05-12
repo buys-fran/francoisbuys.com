@@ -1,6 +1,6 @@
 ---
 title: 'Hello, world'
-layouts: 'layouts/home.html'
+layout: 'layouts/home.html'
 ---
 
 This is pretty _rad_, right?
