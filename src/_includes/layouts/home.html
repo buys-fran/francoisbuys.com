@@ -3,8 +3,7 @@
 {% block content %}
   {% include "partials/in-progress-notification.html" %}
 
-  <article>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
-  </article>
+  {% include "partials/intro.html" %}
+
+  {{ content | safe }}
 {% endblock %}
