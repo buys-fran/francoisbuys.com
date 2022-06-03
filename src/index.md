@@ -1,5 +1,5 @@
 ---
-title: 'Hello, world'
+title: 'Home | francoisbuys.com'
 layout: 'layouts/home.html'
 intro:
   eyebrow: 'Hi, I am Francois'
