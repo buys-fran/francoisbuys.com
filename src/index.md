@@ -10,4 +10,3 @@ intro:
   imageAlt: 'Placeholder'
 ---
 
-This is pretty _rad_, right?

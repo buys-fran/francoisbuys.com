@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/post.html",
+  "permalink": "/garden/{{ title | slug }}/index.html"
+}
+
