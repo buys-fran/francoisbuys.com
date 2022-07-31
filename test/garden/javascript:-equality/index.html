@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript: Equality</title>
+  </head>
+  <body>
+    <header role="banner">
+  <div>
+    <div>
+      <a href="/" aria-label="francoisbuys.com - home">
+        
+        FB Logo
+      </a>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li>
+            <a href="/">home</a>
+          </li>
+          <li>
+            <a href="/garden">garden</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+    <aside>
+  <p>
+    It looks like stylesheets are missing, but actually I’m working on this
+    site openly and it is work in progress.
+    Things will look a bit better as I progress.
+  </p>
+</aside>
+
+
+    <main tabindex="-1" id="main-content">
+      
+  <article>
+    <div class="page-header">
+  <div>
+    <h1> Javascript: Equality </h1>
+    
+    <div>
+      
+  <time datetime="2022-07-20T00:00:00.000Z">20th of July 2022</time>
+  
+    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
+    <ul class="tags-list" aria-describedby="tags-desc">
+      
+        <li>
+          <a href="/tag/javascript/">#Javascript</a>
+        </li>
+      
+    </ul>
+  
+
+    </div>
+    
+  </div>
+</div>
+
+    
+    <div class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+      <pre><code>// Tells us if a and b are the same value
+Object.is(a, b);
+</code></pre>
+<p>2 and 2 is the same value, {} and {} is not the same value. True to our mental model
+variables that point to the same values are the same. So two variables can point to the
+same object, and <code>Object.is</code> will return true in those cases.</p>
+<p>⚠️  Strict equal === also works as expected in our universe, but there are two exceptions:</p>
+<ol>
+<li><strong><code>NaN === NaN</code> is <code>false</code></strong>, although they are the same value, don’t ever use <code>… === NaN</code></li>
+<li><strong><code>0 === 0</code> and <code>0 === -0</code> are <code>true</code></strong>, although they are different values.</li>
+</ol>
+<pre><code>function strictEquals(a, b) {
+  if (Number.isNaN(a) &amp;&amp; Number.isNaN(b)) return false;
+
+  if(Object.is(a, 0) &amp;&amp; Object.is(b, -0)) return true
+
+  if(Object.is(b, 0) &amp;&amp; Object.is(a, -0)) return true
+
+  return Object.is(a, b)
+}
+</code></pre>
+<p>This post contains some of my personal take aways from <a href="https://justjavascript.com/">Dan Abramov's - Just JavaScript Course</a>, I highly recommend his course.</p>
+
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

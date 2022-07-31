@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript: Objects and functions</title>
+  </head>
+  <body>
+    <header role="banner">
+  <div>
+    <div>
+      <a href="/" aria-label="francoisbuys.com - home">
+        
+        FB Logo
+      </a>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li>
+            <a href="/">home</a>
+          </li>
+          <li>
+            <a href="/garden">garden</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+    <aside>
+  <p>
+    It looks like stylesheets are missing, but actually I’m working on this
+    site openly and it is work in progress.
+    Things will look a bit better as I progress.
+  </p>
+</aside>
+
+
+    <main tabindex="-1" id="main-content" class="_test_wi6yu_1">
+      
+  <article>
+    <div class="page-header">
+  <div>
+    <h1> Javascript: Objects and functions </h1>
+    
+    <div>
+      
+  <time datetime="2022-07-09T00:00:00.000Z">9th of July 2022</time>
+  
+    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
+    <ul class="tags-list" aria-describedby="tags-desc">
+      
+        <li>
+          <a href="/tag/javascript/">#Javascript</a>
+        </li>
+      
+    </ul>
+  
+
+    </div>
+    
+  </div>
+</div>
+
+    
+    <div class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+      <p>Objects and functions: Are also values. I can manipulate them from my code.</p>
+<blockquote>
+<p>💡 Functions are objects</p>
+</blockquote>
+<p><a href="/garden/javascript:-primitive-values">Primitive values</a>, objects and functions are the only value types in javascript</p>
+<blockquote>
+<p>💡 Not everything in JS is an object</p>
+</blockquote>
+<p>Objects include:</p>
+<ul>
+<li>arrays,</li>
+<li>dates,</li>
+<li>RegExps</li>
+<li>and other non-primitive values.</li>
+</ul>
+<pre><code class="language-javascript">console.log(typeof({}));// &quot;object&quot;
+console.log(typeof([]));// &quot;object&quot; 
+console.log(typeof(new Date()));// &quot;object&quot; 
+console.log(typeof(/\d+/));// &quot;object&quot;
+console.log(typeof(Math));// &quot;object&quot;
+</code></pre>
+<p>Objects are mutable. <code>const</code> does not prevent object mutation</p>
+<p>Unlike primitives, we can create objects. The following expressions create two different objects, not references to the same object.</p>
+<pre><code class="language-javascript">let thisThing = {}
+let thatThing = {}
+</code></pre>
+<blockquote>
+<p>🗑 JavaScript is a garbage-collected language</p>
+</blockquote>
+<p>Objects are never “nested” in our universe</p>
+<h2>Functions</h2>
+<p>Functions are special objects, we can treat them like they are a separate type of value because of their unique abilities. But under the hood, they are objects.</p>
+
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
