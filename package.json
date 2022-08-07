@@ -14,6 +14,17 @@
   "devDependencies": {},
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "moment": "^2.29.3"
+    "autoprefixer": "^10.4.8",
+    "gulp": "^4.0.2",
+    "gulp-jsoncombine": "^1.0.4",
+    "gulp-postcss": "^9.0.1",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-sourcemaps": "^3.0.0",
+    "moment": "^2.29.3",
+    "node-delete": "^0.1.2",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "postcss-modules": "^4.3.1",
+    "posthtml-css-modules": "^0.1.3"
   }
 }
