@@ -18,3 +18,5 @@ Primitive values, [objects and functions](/garden/javascript:-objects-and-functi
 **All primitive values are immutable**
 
 Think of them as distant unreachable stars in the JS galaxy
+
+This post contains some of my personal take aways from [Dan Abramov's - Just JavaScript Course](https://justjavascript.com/), I highly recommend his course.
