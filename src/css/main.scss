@@ -1,0 +1,26 @@
+/* A place for vendor libraries */
+/* @import 'lib.css'; */
+
+/* A place for mixings and functions */
+/* @import 'helpers/mixin.css' */
+
+/* A place for our variables */
+/* @import 'variables/colors.css' */
+/* @import 'variables/typography.css' */
+/* @import 'variables/breakpoints.css' */
+/* @import 'variables/themes.css' */
+
+/* A place for resets and basic styles */
+@import 'reset';
+
+/* A place for global layouts, prefix with l- */
+@import 'layouts/nav';
+
+/* A place for object styles, prefix with o- */
+@import 'objects/nav';
+
+/* A place for components styles, prefix with c- */
+/* A component is an object that contains other objects */
+
+/* A place for utlity classes prefixed with u- */
+/* @import 'utilities.css' */
