@@ -1,27 +1,23 @@
 {
   "name": "francoisbuys.com",
   "version": "1.0.0",
-  "description": "This is my little piece of the internet. I like to think of it as a digital garden. A landscape of tidbits that I find interesting or useful.",
-  "main": ".eleventy.js",
-  "repository": "https://github.com/buys-fran/francoisbuys.com",
-  "author": "Francois Buys <buys.fran@gmail.com>",
-  "keywords": [],
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+    "esbuild": "node esbuild.config.js --minify",
+    "esbuild-dev": "node esbuild.config.js --watch"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.14.39",
+    "glob": "^8.0.1",
+    "postcss": "^8.4.12",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.1.0",
+    "postcss-load-config": "^3.1.4",
+    "postcss-preset-env": "^7.4.3",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0"
+  },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "concurrently": "^7.5.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "moment": "^2.29.3",
-    "node-delete": "^0.1.2",
-    "sass": "^1.55.0"
+    "open-props": "^1.5.0"
   }
 }

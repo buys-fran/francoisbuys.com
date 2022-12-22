@@ -1,19 +1,37 @@
-# Misc
-*.log
-npm-debug.*
-*.scssc
-*.swp
-.DS_Store
-Thumbs.db
+# Bridgetown
+output
+.bridgetown-cache
+.bridgetown-metadata
+.bridgetown-webpack
+
+# Dependency folders
+node_modules
+bower_components
+vendor
+
+# Caches
 .sass-cache
+.npm
+.node_repl_history
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# dotenv environment variables file
 .env
 
-# tooling config files
-.tool-versions
+# Mac files
+.DS_Store
 
-# Node modules and output
-node_modules
-dist
-public
-src/_includes/css
+# Yarn
+yarn-error.log
+yarn-debug.log*
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
 
+.routes.json
