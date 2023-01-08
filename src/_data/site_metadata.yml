@@ -5,7 +5,7 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Francois Buys
-tagline: Full stack problem solver learninginpublic
+tagline: Full stack problem solver learning in public
 email: fbuys@duck.com
 description: >-
   Hi, I am Francois This is my little piece of the internet. It is a garden. A place where I can share and grow.

@@ -1,0 +1,26 @@
+<% if resource.data.intro %>
+  <div>
+    <article>
+      <div>
+        <h1>
+          <% if resource.data.intro.eyebrow %>
+            <%= resource.data.intro.eyebrow %>
+          <% end %>
+          <% if resource.data.intro.main %>
+            <em><%= resource.data.intro.main %></em>
+          <% end %>
+        </h1>
+      </div>
+      <% if resource.data.intro.buttonUrl %>
+        <div>
+          <a href="<%= resource.data.intro.buttonUrl %>"><%= resource.data.intro.buttonText %></a>
+        </div>
+      <% end %>
+      <% if resource.data.intro.image %>
+        <div>
+          <img src="<%= resource.data.intro.image %>" alt="<%= resource.data.intro.imageAlt %>" />
+        </div>
+      <% end %>
+    </article>
+  </div>
+<% end %>
