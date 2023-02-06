@@ -31,3 +31,10 @@ gem 'bridgetown', '~> 1.1.0'
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
 gem 'puma', '~> 5.6'
+
+# load environment variables from `.env`.
+gem 'dotenv', '~> 2.8', '>= 2.8.1', groups: %i[development test bridgetown_plugins]
+
+# plugin to use notion as a cms
+# gem 'bridgetown_notion', path: '../bridgetown_notion', group: :bridgetown_plugins
+gem 'bridgetown_notion', '~> 0.1.0', group: :bridgetown_plugins
