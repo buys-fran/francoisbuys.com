@@ -19,7 +19,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem 'bridgetown', '~> 1.1.0'
+gem 'bridgetown', '~> 1.2.0'
+
+# Bridgetown/Roda supports Rack 3, other ecosystem gems such as our Active
+# Record pluging don’t yet support it.
+gem "rack", "~> 2.2"
 
 # Uncomment to add file-based dynamic routing to your project:
 # gem "bridgetown-routes", "~> 1.1.0", group: :bridgetown_plugins
@@ -33,8 +37,8 @@ gem 'bridgetown', '~> 1.1.0'
 gem 'puma', '~> 5.6'
 
 # load environment variables from `.env`.
-gem 'dotenv', '~> 2.8', '>= 2.8.1', groups: %i[development test bridgetown_plugins]
+gem 'dotenv', '~> 2.8', '>= 2.8.1', groups: %i[development test]
 
 # plugin to use notion as a cms
 # gem 'bridgetown_notion', path: '../bridgetown_notion', group: :bridgetown_plugins
-gem 'bridgetown_notion', '~> 0.1.0', group: :bridgetown_plugins
+gem 'bridgetown_notion', '~> 0.1.0'
